@@ -1,3 +1,33 @@
+# UKCIC COVID-19 Paper Figures
+
+This repository contains Jupyter Notebooks used to generate figures for the UKCIC COVID-19 paper. Each notebook corresponds to a specific figure or analysis presented in the publication.
+
+## Prerequisites
+
+Follow instruction below to create conda environment:
+
+```
+git clone https://github.com/thjimmylee/UKCIC-COVID19-paper-figures.git
+cd UKCIC-COVID19-paper-figures/spatial_decon
+
+conda create --name spacejam --file environment.txt
+```
+
+Set up a virtual environment (recommended)
+```
+conda activate spacejam
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+Launch Jupyter Notebook
+```
+jupyter notebook
+```
+
+Browse through the folders for `.ipynb` notebooks to reproduce results.
+
+
 ## Integrated histopathology, spatial and single cell transcriptomics resolve cellular drivers of early and late alveolar damage in COVID-19
 
 Jimmy Tsz Hang Lee<sup>1,\*</sup>, Sam N. Barnett<sup>2,\*</sup>, Kenny Roberts<sup>1</sup>, Helen Ashwin<sup>3</sup>, Luke Milross<sup>4</sup>, Jae-Won Cho<sup>5</sup>, Alik Huseynov<sup>2</sup>, Benjamin Woodhams<sup>1,6</sup>, Alexander Aivazidis<sup>1</sup>, Tong Li<sup>1</sup>, Joaquim Majo<sup>7</sup>, Patricia Chaves Guerrero<sup>2</sup>, Michael Lee<sup>2</sup>, Antonio M. A. Miranda<sup>2</sup>, Zuzanna Jablonska<sup>2</sup>, Vincenzo Arena<sup>8</sup>, Brian Hanley<sup>9</sup>, Michael Osborn<sup>9</sup>, Virginie Uhlmann<sup>6</sup>, Xiao-Ning Xu<sup>10</sup>, Gary R McLean<sup>2,11</sup>, Sarah A. Teichmann<sup>1,12</sup>, Anna M. Randi<sup>2,13</sup>, Andrew Filby<sup>14</sup>, Paul M. Kaye<sup>3</sup>, Andrew J. Fisher<sup>4,15,\*\*</sup>, Martin Hemberg<sup>5,\*\*</sup>, Michela Noseda<sup>2,\*\*</sup>, Omer Ali Bayraktar<sup>1,\*\*</sup>
