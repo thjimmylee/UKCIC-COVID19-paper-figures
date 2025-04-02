@@ -1,31 +1,16 @@
 # UKCIC COVID-19 Paper Figures
 
-This repository contains Jupyter Notebooks used to generate figures for the UKCIC COVID-19 paper. Each notebook corresponds to a specific figure or analysis presented in the publication.
+This branch contains R code for the pathological biomarkers analysis.
 
-## Prerequisites
+a2 is the input dataframe
 
-Follow instruction below to create conda environment:
+a1 (the first part of the a2): gene expression value
 
-```
-git clone https://github.com/thjimmylee/UKCIC-COVID19-paper-figures.git
-cd UKCIC-COVID19-paper-figures/spatial_decon
+b1 (the last column of the a2): pathology annotation
 
-conda create --name spacejam --file environment.txt
-```
+I tried both whole genes and top1000 highly variable gene (from Seurat)
 
-Set up a virtual environment (recommended)
-```
-conda activate spacejam
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-Launch Jupyter Notebook
-```
-jupyter notebook
-```
-
-Browse through the folders for `.ipynb` notebooks to reproduce results.
+We used the top1000 since the performance was the best
 
 
 ## Integrated histopathology, spatial and single cell transcriptomics resolve cellular drivers of early and late alveolar damage in COVID-19
