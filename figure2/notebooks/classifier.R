@@ -8,6 +8,13 @@ b1<-factor(a$Pathology)
 a2<-cbind(a1, b1)
 colnames(a2)[dim(a2)[2]]<-"pathol"
 ###############################################################
+
+# a2 is the input dataframe
+# a1 (the first part of the a2): gene expression value
+# b1 (the last column of the a2): pathology annotation
+# I tried both whole genes and top1000 highly variable gene (from Seurat)
+# We used the top1000 since the performance was the best
+
 ###############################################################
 total_res<-c()
 ###svm
